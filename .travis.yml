@@ -23,5 +23,5 @@ deploy:
     - build/nsq_exporter_windows_386.exe
     - build/nsq_exporter_windows_amd64.exe
   on:
-    repo: emaincourt/nsq_exporter
+    repo: beeinventor/nsq_exporter
     tags: true

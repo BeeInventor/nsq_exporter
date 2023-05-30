@@ -14,7 +14,7 @@ deps-init:
 	$(GOPATH)/bin/govendor init
 
 deps-get: deps-init
-	@$(GOPATH)/bin/govendor get github.com/emaincourt/nsq_exporter
+	@$(GOPATH)/bin/govendor get github.com/beeinventor/nsq_exporter
 
 .PHONY: clean
 clean:
@@ -27,4 +27,4 @@ test:
 .PHONY: release-build
 release-build:
 	@go get -u github.com/mitchellh/gox
-	@$(GOX) $(GOX_ARGS) github.com/emaincourt/nsq_exporter
+	@$(GOX) $(GOX_ARGS) github.com/beeinventor/nsq_exporter

@@ -1,12 +1,12 @@
 # NSQ Exporter
 
-> This fork fixes an issue with NSQ 1.x.x that led to the unability to fetch metrics. The built image can be found at `emaincourt/nsq_exporter`.
+> This fork fixes an issue with NSQ 1.x.x that led to the unability to fetch metrics. The built image can be found at `beeinventor/nsq_exporter`.
 
 NSQ exporter for prometheus.io, written in go.
 
 ## Usage
 
-    docker run -d --name nsq_exporter -l nsqd:nsqd -p 9117:9117 emaincourt/nsq_exporter:latest -nsq.addr=http://nsqd:4151 -collectors=nsqstats
+    docker run -d --name nsq_exporter -l nsqd:nsqd -p 9117:9117 beeinventor/nsq_exporter:latest -nsq.addr=http://nsqd:4151 -collectors=nsqstats
 
 ## Building
 
@@ -14,8 +14,8 @@ NSQ exporter for prometheus.io, written in go.
 
     OR
 
-    go get -u github.com/emaincourt/nsq_exporter
-    go install github.com/emaincourt/nsq_exporter
+    go get -u github.com/beeinventor/nsq_exporter
+    go install github.com/beeinventor/nsq_exporter
 
 ## Contributing
 
@@ -24,3 +24,7 @@ NSQ exporter for prometheus.io, written in go.
 3.  Commit your changes: `git commit -am 'Add some feature'`
 4.  Push to the branch: `git push origin my-new-feature`
 5.  Submit a pull request
+
+## Credits
+
+- https://github.com/emaincourt/nsq_exporter
